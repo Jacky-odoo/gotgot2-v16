@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <menuitem id="got_2_invoice_main_menu" name="Invoice">
+            <menuitem id="got_2_invoice_main_menu_dashboard" name="Dashboard" 
+            action="account.action_move_out_invoice_type" sequence="1"/>
+            <menuitem id="got_2_invoice_main_menu_payments" name="Payments" sequence="2"
+            action="account.action_account_payments"/>
+            <menuitem id="got_2_credit_notes_main_menu_payments" name="Credit Notes" sequence="3"
+            action="account.action_move_out_refund_type"/>
+        </menuitem>
+        
+        
+        <!-- <menuitem id="ks_multi_company_inventory_transfer.vehicle_soft_transfer_menu"
+                        name="Company Transfer" action="ks_multi_company_inventory_transfer.ks_action_ks_multi_company_inventory_transfer"
+                        parent="product_service_child_transaction" sequence="6"/> -->
+
+        <menuitem id="sales_configuration_menu" name="Sales" parent="root_configrastion_menu" sequence="10"/>
+            <menuitem id="root_shipping_methods_manu" name="Shipping Methods" action="action_shipping_methods_views"
+                parent="opt_custom.sales_configuration_menu" sequence="3"/>
+        <menuitem id="appointment_configuration_menu" name="Appointment" parent="root_configrastion_menu" sequence="11"/>
+        <menuitem id="inventory_configuration_menu" name="Inventory" parent="root_configrastion_menu" sequence="12"/>
+            <menuitem id="menu_product_category" name="Product Categories" action="product.product_category_action_form"
+                      parent="inventory_configuration_menu" sequence="2"/>
+
+         <menuitem id="patient_configuration_menu" name="Patient" parent="root_configrastion_menu" sequence="13"/>
+        <!--     -->
+           <menuitem id="rx_discontinue_reason_menuitem" action="rx_discontinue_reason_action"
+                      parent="opt_custom.patient_configuration_menu" sequence="2"/>
+
+        <menuitem id="general_configuration_menu" name="General" parent="root_configrastion_menu" sequence="14"/>
+            <menuitem id="root_purchase_conf_manu" name="Vendors" action="account.res_partner_action_supplier"
+                      parent="general_configuration_menu" sequence="3"/>
+            <menuitem id="journal" name="Payment Type" action="account.action_account_journal_form"
+                      parent="general_configuration_menu" sequence="4"/>
+            <menuitem id="open_view_employee_list_my" name="Employees" action="hr.open_view_employee_list_my"
+                      parent="general_configuration_menu" sequence="5"/>
+            <menuitem id="open_action_hr_contract" name="Contracts" action="hr_contract.action_hr_contract"
+                      parent="general_configuration_menu" sequence="6"/>
+            <menuitem id="open_action_hr_job" name="Job Positions" action="hr.action_hr_job"
+                      parent="general_configuration_menu" sequence="8"/>
+            <menuitem id="open_open_module_tree_department" name="Departments" action="hr.hr_department_kanban_action"
+                      parent="general_configuration_menu" sequence="9"/>
+            <menuitem id="open_hr_plan_action" name="Plans" action="hr.hr_plan_action"
+                      parent="general_configuration_menu" sequence="10"/>
+        <menuitem id="patient_engagement_configuration_menu" name="Patient Engagement" parent="root_configrastion_menu" sequence="17"/>
+        <menuitem id="menu_config" name="Settings" parent="root_configrastion_menu" sequence="0"
+                  action="base_setup.action_general_configuration" groups="base.group_system"/>
+
+
+        <menuitem id="spec_rx_usage_menu" parent="opt_custom.patient_configuration_menu" name="add Rx Usage" action="spec_rx_usage_action" sequence="1"/>
+    </data>
+</odoo>

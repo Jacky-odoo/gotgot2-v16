@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_spec_employee_insurance,access_spec_employee_insurance,model_spec_employee_insurance,base.group_user,1,1,1,1
+access_report_code,access_report_code,model_report_code,base.group_user,1,1,1,1
+access_spec_copy_cms_setting,access_spec_copy_cms_setting,model_spec_copy_cms_setting,base.group_user,1,1,1,1
+access_claim_manager,access_claim_manager,model_claim_manager,base.group_user,1,1,1,1
+access_claim_line,access_claim_line,model_claim_line,base.group_user,1,1,1,1
+access_transmission_type,access_transmission_type,model_transmission_type,base.group_user,1,1,1,1
+access_claim_supplemental_information,access_claim_supplemental_information,model_claim_supplemental_information,base.group_user,1,1,1,1
+access_remittance_advice,access_remittance_advice,model_remittance_advice,base.group_user,1,1,1,1
+access_remittance_advice_line,access_remittance_advice_line,model_remittance_advice_line,base.group_user,1,1,1,1
+access_remittance_advice_payment_notes,access_remittance_advice_payment_notes,model_remittance_advice_payment_notes,base.group_user,1,1,1,1
+access_remittance_advice_payment,access_remittance_advice_payment,model_remittance_advice_payment,base.group_user,1,1,1,1
+

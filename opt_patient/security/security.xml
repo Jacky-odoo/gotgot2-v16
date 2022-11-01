@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.module.category" id="module_category_opt_patien">
+        <field name="name">Opt Patient</field>
+        <field name="description">Create Patient based on this category</field>
+    </record>
+
+
+    <record id="opt_patient_group_users" model="res.groups">
+        <field name="name">User: Own documents only</field>
+        <field name="category_id" ref="module_category_opt_patien" />
+    </record>
+
+
+    <record id="opt_patient_group_manager" model="res.groups">
+        <field name="name">Manager: All documents</field>
+        <field name="category_id" ref="module_category_opt_patien" />
+        <field name="implied_ids" eval="[(4, ref('opt_patient_group_users'))]" />
+    </record>
+
+
+    <record id="opt_patient_group_super_user" model="res.groups">
+        <field name="name">Super user: All documents &amp; settings</field>
+        <field name="category_id" ref="module_category_opt_patien" />
+        <field name="implied_ids" eval="[(4, ref('opt_patient_group_manager'))]" />
+    </record>
+
+</odoo>
